@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">WheaterApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="max_temp">Max Temp</string>
+    <string name="min_temp">Min temp</string>
+    <string name="temperatura">24ºC</string>
+    <string name="clear_sky">Clear Sky</string>
+    <string name="update_at">Update at</string>
+    <string name="cidade">Cidade</string>
+    <string name="nascer_do_sol">Nascer do Sol</string>
+    <string name="horario">5:30am</string>
+    <string name="por_do_sol">Pôr do Sol</string>
+    <string name="umidade">Umidade</string>
+    <string name="humidity_value">4:4</string>
+    <string name="imagem_referente_ao_clima">Imagem Referente ao Clima</string>
+    <string name="button_week">7 Dias</string>
+    <string name="button_today">Hoje</string>
+    <string name="digite_sua_cidade">DIGITE SUA CIDADE</string>
+    <string name="button_search">button_search</string>
+    <string name="hoje">Hoje</string>
+    <string name="semana">Semana</string>
+    <string name="previs_o_para_semana">Previsão para Semana</string>
+</resources>
