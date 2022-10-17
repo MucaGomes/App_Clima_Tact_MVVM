@@ -21,4 +21,6 @@
     <string name="hoje">Hoje</string>
     <string name="semana">Semana</string>
     <string name="previs_o_para_semana">Previsão para Semana</string>
+    <string name="welcome">SEJA BEM-VINDO</string>
+    <string name="description_onboarding">A idea do nosso app é que você possa se manter informado sobre como está o clima no lugar que você escolher</string>
 </resources>
