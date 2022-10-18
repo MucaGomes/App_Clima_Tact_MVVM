@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.climahoje.databinding.CardLayoutBinding
-import java.lang.String.format
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -27,9 +26,9 @@ class HomeAdapter : RecyclerView.Adapter<HomeAdapter.HomeViewHolder>() {
         val data = listWeather[position]
 
         holder.binding.address.text = data.city.name + ", " + data.city.country
-        holder.binding.temp.text =  data.list[0].main.temp.toString() + "ºC"
-        holder.binding.tempMax.text = "temp max: " + data.list.get(0).main.tempMax.toString() + "ºC"
-        holder.binding.tempMin.text = "temp min: " + data.list.get(0).main.tempMin.toString() + "ºC"
+        holder.binding.txtTemp.text =  data.list[0].main.temp.toString() + "ºC"
+        holder.binding.txtMaxTemp.text = "temp max: " + data.list.get(0).main.tempMax.toString() + "ºC"
+        holder.binding.txtMinTemp.text = "temp min: " + data.list.get(0).main.tempMin.toString() + "ºC"
         holder.binding.humidity.text = data.list.get(0).main.humidity.toString()
         holder.binding.status.text = data.list.get(0).weather.get(0).description
 

@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.climahoje.adapter.HomeAdapter
 import com.example.climahoje.api.ApiService.Companion.city
@@ -50,6 +51,10 @@ class HomeFragment : Fragment() {
             if (response != null){
                 mAdapter.setData(response.body()!!)
             }
+        }
+
+        binding.imgNextWeek.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_weekFragment)
         }
 
         return binding.root

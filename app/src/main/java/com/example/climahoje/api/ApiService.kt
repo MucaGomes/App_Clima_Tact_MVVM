@@ -13,7 +13,6 @@ interface ApiService {
         @Query("units") units: String = "metric"
     ): Response<Root>
 
-
     companion object {
         val API_KEY = "77cc11404020d9911e38f90435b7745b"
         var city = "São Paulo"

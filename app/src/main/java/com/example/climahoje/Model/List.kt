@@ -1,4 +1,4 @@
-package com.example.climahoje.adapter.Model
+package com.example.climahoje.Model
 
 import com.google.gson.annotations.SerializedName
 

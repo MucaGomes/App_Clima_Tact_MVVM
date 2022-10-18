@@ -1,4 +1,4 @@
-package com.example.climahoje.adapter.Model
+package com.example.climahoje.Model
 
 data class City(
     val id: Long,
