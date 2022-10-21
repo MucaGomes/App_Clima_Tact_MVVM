@@ -1,4 +1,4 @@
-# :sunny: Clima Tatic - MVVM - Hilt - Retrofit - Android e Kotlin 
+# :sunny: Clima Tact - MVVM - Hilt - Retrofit - Android e Kotlin 
 ( FINALIZADO ) Aplicação com objetivo de informar como esta o clima em qualquer lugar especificado pelo usuario, 
 utilizando como API a https://openweathermap.org e obtendo os dados no aplicativo atráves da biblioteca Retrofit , 
 ##
