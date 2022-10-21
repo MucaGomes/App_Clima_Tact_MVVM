@@ -1,6 +1,6 @@
 import com.example.climahoje.Model.City
 
-data class Root(
+data class  Root(
     val cod: String,
     val message: Long,
     val cnt: Long,

@@ -1,14 +1,15 @@
 package com.example.climahoje
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.climahoje.adapter.WeekAdapter
+import com.example.climahoje.api.ApiService.Companion.city
 import com.example.climahoje.databinding.FragmentWeekBinding
 
 
@@ -25,19 +26,19 @@ class WeekFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentWeekBinding.inflate(layoutInflater, container, false)
 
-        mainViewModel.getData()
+        var cityWeek = city
 
+        mainViewModel.getDataWeek()
 
         val mAdapter = WeekAdapter()
         binding.rvlWeek.layoutManager = LinearLayoutManager(context)
         binding.rvlWeek.adapter = mAdapter
         binding.rvlWeek.setHasFixedSize(true)
 
-        mainViewModel.myWeatherResponse.observe(viewLifecycleOwner){ response ->
+        mainViewModel.myWeatherWeekResponse.observe(viewLifecycleOwner) { response ->
             if (response != null) {
-                mAdapter.setDataWeek(response.body()!!)
+                mAdapter.setDataWeek(response.list)
             }
-
         }
 
         binding.imgBack.setOnClickListener {

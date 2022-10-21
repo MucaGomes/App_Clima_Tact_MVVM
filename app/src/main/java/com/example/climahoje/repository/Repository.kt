@@ -8,8 +8,10 @@ class Repository {
 
     suspend fun getWeatherData(): Response<Root>{
         return RetrofitInstance.api.getWeatherData()
+    }
 
-
+    suspend fun getWeatherWeekData(): Root {
+        return  RetrofitInstance.api.getWeatherWeekData()
     }
 
 }
