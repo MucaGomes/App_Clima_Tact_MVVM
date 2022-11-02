@@ -8,6 +8,7 @@ import com.example.climahoje.R
 import com.example.climahoje.databinding.CardWeekLayoutBinding
 import java.text.SimpleDateFormat
 import java.util.*
+import kotlin.time.Duration.Companion.days
 
 class WeekAdapter : RecyclerView.Adapter<WeekAdapter.WeekViewHolder>() {
 
@@ -46,6 +47,7 @@ class WeekAdapter : RecyclerView.Adapter<WeekAdapter.WeekViewHolder>() {
 
         val d = Date(data.dt * 1000)
 
+
         when (d.day) {
             1 -> holder.binding.txtDia.text = "Seg"
 
@@ -59,7 +61,7 @@ class WeekAdapter : RecyclerView.Adapter<WeekAdapter.WeekViewHolder>() {
 
             6 -> holder.binding.txtDia.text = "Sáb"
 
-            7 -> holder.binding.txtDia.text = "Dom"
+            0 -> holder.binding.txtDia.text = "Dom"
 
         }
 
